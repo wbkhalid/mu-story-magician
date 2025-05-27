@@ -1,0 +1,90 @@
+.flipbook-container {
+  overflow: hidden;
+}
+
+.end-page {
+  background-color: #f5f5dc;
+  font-size: 2rem;
+  color: #444444;
+}
+
+.cover-name,
+.cover-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Quicksand' !important;
+  font-weight: 700;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 2px #fff,
+    0 0 6px #fff,
+    0 0 8px #fff,
+    0 0 12px #fff,
+    0 0 15px #fff,
+    0 0 10px #fff;
+}
+
+.cover-title {
+  top: 15%;
+  color: #ff5a00;
+  line-height: 100%;
+  font-size: 2rem;
+}
+
+.cover-name {
+  top: 80%;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.display_desktop_book {
+  display: flex !important;
+}
+.display_laptop_book {
+  display: none !important;
+}
+
+.book_text {
+  padding: 2rem !important;
+  color: #444444;
+  line-height: 200% !important;
+  font-family: 'Quicksand' !important;
+  font-weight: 500 !important;
+}
+
+@media (max-width: 1336px) {
+  .display_desktop_book {
+    display: none !important;
+  }
+  .display_laptop_book {
+    display: flex !important;
+  }
+  .book_text {
+    padding: 1rem !important;
+    line-height: 150% !important;
+  }
+  .cover-title {
+    font-size: 1.5rem;
+  }
+
+  .cover-name {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 900px) {
+  .display_laptop_book {
+    display: none !important;
+  }
+
+  .cover-title {
+    font-size: 1.2rem;
+  }
+
+  .cover-name {
+    font-size: 1rem;
+  }
+}
